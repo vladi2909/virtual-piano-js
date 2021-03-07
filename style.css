@@ -145,6 +145,13 @@ body {
   display: none;
   content: attr(data-letter);
 }
+
+
+.piano-key.key-active::after,
+.piano-key.key-active::before {
+  content: attr(data-letter);
+}
+
 .piano-key:hover::before,
 .piano-key:hover::after {
   color: #CBD5DE;
